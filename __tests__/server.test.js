@@ -14,8 +14,7 @@ afterAll(async () => {
   await db.drop();
 });
 
-// testing v1 routes
-describe('v1 routes', () => {
+describe('Test routes', () => {
 
   test('testing POST', async () => {
     let response = await request.post('/api/v1/food').send({
@@ -60,7 +59,4 @@ describe('v1 routes', () => {
 
     expect(response.status).toEqual(200);
   });
-
-  // testing v2 routes
-  
 });
