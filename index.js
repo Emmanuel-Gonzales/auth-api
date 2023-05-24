@@ -7,4 +7,5 @@ const PORT = process.env.PORT || 3001;
 
 db.sync().then(() => {
   app.start(PORT);
+  console.log(`CONNECTED TO PORT ${PORT}`);
 });
